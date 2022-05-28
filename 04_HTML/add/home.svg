@@ -1,0 +1,8 @@
+<svg width="50" height="50"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <circle cx="25" cy="25" r="20" fill="red" />
+  <rect x="15" y="25" width="20" height="13" stroke="black" fill="white" stroke-width="2"/>
+  <polyline points="10 25, 15 20, 25 10, 35 20, 40 25, 10 25, 15 20" fill="white" stroke="black" stroke-width="2" />
+  <rect x="20" y="30" width="5" height="7" stroke="black" fill="white" stroke-width="1" />
+</svg>
