@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <style>
+        .navigation {
+            background-color: rgb(160, 160, 160);
+            width: 15em;
+            float: left;
+            word-wrap: break-word;
+        }
+        .st {
+            background-color: gray;
+            margin-bottom: 0.2em;
+            width: auto;
+            margin-left: 15em;
+            overflow: hidden;
+        }
+        .footer {
+            background-color: rgb(130, 108, 108);
+            clear: both;
+        }
+        .parent {
+            background-color: rgb(215, 215, 215);
+        }
+        .img {
+            float: right;
+        }
+        ul {
+            padding: 0%;
+        }
+        ul li {
+            margin-left: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="navigation">
+            <ul><h3>Блок навигации</h3>
+                <li>Шир. 15ем</li>
+                <li>Цвет фона</li>
+                <li>Располагается слева</li>
+                <li>КонтентКонтентКонтентКонтентКонтентКонтентКонтентКонтентКонтентКонтентКонтент</li>
+            </ul>
+        </div>
+        <div class="st">
+            <h3>Статья 1</h3>
+            <p>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех статьях сделать отступ 2em, при помощи св-ва margin-bottom
+            </p>
+        </div>
+        <div class="st">
+            <h3>Статья 2</h3>
+            <p>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех статьях сделать отступ 2em, при помощи св-ва margin-bottom
+            </p>
+            <div class="img"><img src="mail.jfif"></div>            
+        </div>
+    </div>
+    <div class="footer">
+    <span>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется контентом</span>
+    </div>    
+</body>
+</html>

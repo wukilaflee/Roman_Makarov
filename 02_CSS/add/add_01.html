@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .first {
+            width: 80%;
+            padding: 2em;
+            background-color: #ccc;
+            background-image: url(b-r.gif), url(b-l.gif), url(t-l.gif), url(t-r.gif), url(l.gif), url(r.gif), url(t.gif), url(b.gif);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+            background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+            }
+        .second {
+            background:
+                url('l-t.png') no-repeat top left,
+                url('r-t.png') no-repeat top right,
+                url('l-b.png') no-repeat bottom left,
+                url('r-b.png') no-repeat bottom right,
+                url('l.png') repeat-y left,  
+                url('t.png') repeat-x top, 
+                url('r.png') repeat-y right, 
+                url('b.png') repeat-x bottom; 
+            width: 80%; 
+            padding:2.5em;  
+        }
+        .fourth {
+                border-style:solid; 
+                border-width: 2.5em;  
+                width:80%;
+    			border-image-source: url('ramka.png') ;
+    			border-image-slice: 100;
+    			border-image-repeat: stretch; 
+    			border-image-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum debitis, 
+        aperiam mollitia ipsam excepturi repellendus et eius dolor tempora, 
+        dolorem possimus. Illo fugit molestias animi officiis possimus cumque dicta?
+    </div>    
+    <br>
+    <div class="second"> 
+        <h2>Домашнее задание №4</h2>
+        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. 
+        Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br> 
+        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину. <br>
+        Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </div>
+    <br>
+        <div style="width:80%; background: url('l.png') repeat-y left">
+            <div style="background: url('t.png') repeat-x top">
+                <div style="background: url('r.png') repeat-y right">
+                    <div style="background: url('b.png') repeat-x bottom">
+                        <div style="background: url('l-t.png') no-repeat top left">
+                            <div style="background: url('r-t.png') no-repeat top right">
+                                <div style="background: url('l-b.png') no-repeat bottom left">
+                                    <div style="background: url('r-b.png') no-repeat bottom right">
+                                        <div style=" padding:2.5em">
+                                            <h2>Домашнее задание №4</h2>
+                                            Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. 
+                                            Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br> 
+                                            Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.<br>
+                                            Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — 
+                                            на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br>
+    <div class="fourth">
+	   	<h2>Домашнее задание №4</h2>
+	   	Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. 
+		Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br> 
+		Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину. <br>
+		Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера 
+        (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+	</div>        
+</body>
+</html>
