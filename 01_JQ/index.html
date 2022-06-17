@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-color: white;
+        }
+        tr:nth-child(odd) {
+            background-color: gainsboro;
+        }
+        tr:first-child {
+            background-color: gray;
+        }
+        td,th {
+            border: 2px dotted
+        }
+    </style>
+    <title>Spisok</title>
+</head>
+<body>
+    <table id="test">
+        <tr>
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr id="test2">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="test3">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="test4">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="test5">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="test6">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+    </table>   
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function($) {
+            $('#test').click(function(){
+                if($('#test2').is(':visible'))
+                {
+                $('#test2').hide();}
+            })
+        })
+    </script>
+</body>
+</html>
