@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Format</title>
+    <style>
+        .main {border-width: 1px;
+            border-style: solid;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        ul {
+            list-style-image: url(file.jfif);
+        }
+        .img {
+            opacity: 0;
+        }
+        ul li:hover .img{
+            opacity: 1;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <div class="main">
+        <p>.DOC или .doc (от англ. <img src='Arrow.png'><a href="#">document</a>) - расширение имени файла, используемое для файлов, прдеставляющих текст, сразметкой
+        или без.<br>
+        <a href="#">Документ MS Word</a><img src="Word.jfif">
+        </p>
+    </div>
+    <div class="main">
+        <p>Portable Document Format (<img src="arrow.png"><a href="#">PDF</a>) - межплатформенный формат электр. док-тов, разработанный фирмой Adobe
+            Systems с использованием ряда возможностей языка Postscript.<br>
+            <a href="#">Документ PDF</a><img src="PDF.png">
+        </p>
+    </div>
+    <div class="main">
+        <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <img src="arrow.png"><a href="#">.zip</a>)
+            и хранит в сжатом или несжатом виде один ии несколько файлов.<br>
+            <a href="#">Архив</a><img src="ZIP.gif">
+        </p>
+    </div>
+    <h2>Это список файлов</h2>
+    <ul>
+        <li><a href="#">Документ MS Word</a><img class="img" src="Word.jfif"></li>
+        <li><a href="#">Документ PDF</a><img class="img" src="PDF.png"></li>
+        <li><a href="#">Архив</a><img class="img" src="ZIP.gif"></li>
+    </ul>
+</body>
+</html>
