@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Format</title>
+    <style>
+        .main {border-width: 1px;
+            border-style: solid;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        ul {
+            list-style: none;
+        }
+        .img {
+            opacity: 0;
+        }
+        ul li:hover .img{
+            opacity: 1;
+            transition: 1s;
+        }
+        a[href$='arrow']::before {
+            content: url(..//Base/Arrow.png)
+        }
+        a[href$='word']::after {
+            content: url(..//Base/Word.jfif)
+        }
+        a[href$='pdf']::after {
+            content: url(..//Base/PDF.png)
+        }
+        a[href$='arch']::after {
+            content: url(..//Base/ZIP.gif)
+        }
+        a[href$='list']::before {
+            content: url(..//Base/file.jfif)
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <div class="main">
+        <p>.DOC или .doc (от англ. <a href="#arrow">document</a>) - расширение имени файла, используемое для файлов, прдеставляющих текст, сразметкой
+        или без.<br>
+        <a href="#word">Документ MS Word</a>
+        </p>
+    </div>
+    <div class="main">
+        <p>Portable Document Format (<a href="#arrow">PDF</a>) - межплатформенный формат электр. док-тов, разработанный фирмой Adobe
+            Systems с использованием ряда возможностей языка Postscript.<br>
+            <a href="#pdf">Документ PDF</a>
+        </p>
+    </div>
+    <div class="main">
+        <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="#arrow">.zip</a>)
+            и хранит в сжатом или несжатом виде один ии несколько файлов.<br>
+            <a href="#arch">Архив</a>
+        </p>
+    </div>
+    <h2>Это список файлов</h2>
+    <ul>
+        <li><a href="#list">Документ MS Word</a><img class="img" src="..//Base/Word.jfif"></li>
+        <li><a href="#list">Документ PDF</a><img class="img" src="..//base/PDF.png"></li>
+        <li><a href="#list">Архив</a><img class="img" src="..//base/ZIP.gif"></li>
+    </ul>
+</body>
+</html>
